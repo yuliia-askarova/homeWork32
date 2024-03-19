@@ -4,7 +4,6 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000;
-const host = process.env.HOST  || '0.0.0.0';
 app.use(express.static(path.join(__dirname, './client/dist')));
 
 app.get('*', (req, res) => {
@@ -50,10 +49,6 @@ return {
     size, newArray
 }
 }
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`)
-// })
-app.listen({port,host},) 
-.then(() => { 
-    console.log(`Example app listening on port ${port}`) 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
 })

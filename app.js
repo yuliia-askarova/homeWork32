@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000;
+const host = process.env.HOST  || '0.0.0.0';
 app.use(express.static(path.join(__dirname, './client/dist')));
 
 app.get('*', (req, res) => {

@@ -50,6 +50,10 @@ return {
     size, newArray
 }
 }
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
+app.listen({port,host},) 
+.then(() => { 
+    console.log(`Example app listening on port ${port}`) 
 })

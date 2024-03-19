@@ -1,0 +1,11 @@
+[
+{
+    "name": "",
+    "imageUrl": "",
+    "price": [0, 0, 0],
+    "isAvailable": true,
+    "ingredients": [],
+    "description": "",
+    "size": ["S", "M", "L" ]
+}
+]
